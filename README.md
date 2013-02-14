@@ -1,3 +1,5 @@
+[ ] Quitar datos sensibles: ginn.conf, logotipos y datos reales de plantillas, etc.
+
 INSTRUCCIONES DE INSTALACIÓN
 ============================
 

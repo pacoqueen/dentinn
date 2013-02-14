@@ -17,8 +17,9 @@ INSTRUCCIONES DE INSTALACIÓN
     local all udentinn2 password
 ```
 y 
-
+```sh
     /etc/init.d/postgresql* restart
+```
 
 3. Crear base de datos:
 
@@ -28,8 +29,8 @@ y
     cd db
     createdb dbdentinn2 -O udentinn2 --encoding UNICODE
     psql -U udentinn2 dbdentinn2 < tablas.sql
-    (o init_db dbdentinn udentinn2 dentinn)
 ```
+> (o `init_db dbdentinn udentinn2 dentinn`)
 
 4. Si es postgre 7.4, crear la BD a mano (sin init_db), hacer `su postgres` y `createlang plpgsql dbdentin2;` y finalmente  volcar el tablas. Antes hay que editarlo para quitar el `CREATE LANGUAGE`.
 
